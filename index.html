@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Pow2ball</title>
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #e5b253;
+      }
+      #game-container {
+        margin-top: 40px;
+        width: 100%;
+        max-width: 620px;
+        height: 85vh;
+        position: relative;
+      }
+      #score-display {
+        position: absolute;
+        top: 30px;
+        left: 20%;
+        transform: translateX(-50%);
+        font-size: 24px;
+        color: #333;
+        z-index: 10;
+      }
+      #high-score-display {
+        bottom: 10px;
+      }
+      canvas {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="game-container">
+      <div id="score-display">Score: 0</div>
+      <div id="high-score-display">High Score: 0</div>
+    </div>
+    <script src="matter.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
